@@ -1,0 +1,356 @@
+[
+  {
+    "name": "TechCorp",
+    "website": "www.techcorp.com",
+    "industry": "Technology",
+    "location": "San Francisco, CA",
+    "workEmail": "contact@techcorp.com",
+    "salesEmail": "sales@techcorp.com",
+    "ceoName": "John Doe",
+    "ceoLinkedIn": "https://linkedin.com/in/johndoe",
+    "competitors": ["InnovateX", "NextGen AI"],
+    "jobOpenings": [
+      { "title": "Software Engineer", "location": "San Francisco, CA" },
+      { "title": "Product Manager", "location": "Remote" }
+    ],
+    "revenueGrowth": "12% YoY",
+    "investors": [
+      { "name": "Sequoia Capital", "funding": "$50M" },
+      { "name": "Andreessen Horowitz", "funding": "$30M" }
+    ],
+    "socialMediaProfiles": {
+      "linkedin": "https://linkedin.com/company/techcorp",
+      "twitter": "https://twitter.com/techcorp",
+      "facebook": "https://facebook.com/techcorp"
+    }
+  },
+  {
+    "name": "InnovateX",
+    "website": "www.innovatex.com",
+    "industry": "Finance",
+    "location": "New York, NY",
+    "workEmail": "contact@innovatex.com",
+    "salesEmail": "sales@innovatex.com",
+    "ceoName": "Alice Johnson",
+    "ceoLinkedIn": "https://linkedin.com/in/alicejohnson",
+    "competitors": ["TechCorp", "NextGen AI"],
+    "jobOpenings": [
+      { "title": "Financial Analyst", "location": "New York, NY" },
+      { "title": "Risk Manager", "location": "Remote" }
+    ],
+    "revenueGrowth": "15% YoY",
+    "investors": [
+      { "name": "Goldman Sachs", "funding": "$40M" },
+      { "name": "JP Morgan", "funding": "$25M" }
+    ],
+    "socialMediaProfiles": {
+      "linkedin": "https://linkedin.com/company/innovatex",
+      "twitter": "https://twitter.com/innovatex",
+      "facebook": "https://facebook.com/innovatex"
+    }
+  },
+  {
+    "name": "NextGen AI",
+    "website": "www.nextgenai.com",
+    "industry": "Artificial Intelligence",
+    "location": "Austin, TX",
+    "workEmail": "contact@nextgenai.com",
+    "salesEmail": "sales@nextgenai.com",
+    "ceoName": "Jane Smith",
+    "ceoLinkedIn": "https://linkedin.com/in/janesmith",
+    "competitors": ["QuantumSoft", "TechCorp"],
+    "jobOpenings": [
+      { "title": "ML Engineer", "location": "Austin, TX" },
+      { "title": "Data Scientist", "location": "Remote" }
+    ],
+    "revenueGrowth": "20% YoY",
+    "investors": [
+      { "name": "SoftBank", "funding": "$100M" }
+    ],
+    "socialMediaProfiles": {
+      "linkedin": "https://linkedin.com/company/nextgenai",
+      "twitter": "https://twitter.com/nextgenai",
+      "facebook": "https://facebook.com/nextgenai"
+    }
+  },
+  {
+    "name": "CloudSync",
+    "website": "www.cloudsync.com",
+    "industry": "Cloud Computing",
+    "location": "Seattle, WA",
+    "workEmail": "contact@cloudsync.com",
+    "salesEmail": "sales@cloudsync.com",
+    "ceoName": "Michael Brown",
+    "ceoLinkedIn": "https://linkedin.com/in/michaelbrown",
+    "competitors": ["TechCorp", "DataSphere"],
+    "jobOpenings": [
+      { "title": "Cloud Architect", "location": "Seattle, WA" },
+      { "title": "DevOps Engineer", "location": "Remote" }
+    ],
+    "revenueGrowth": "18% YoY",
+    "investors": [
+      { "name": "Amazon Web Services", "funding": "$60M" },
+      { "name": "Microsoft Ventures", "funding": "$35M" }
+    ],
+    "socialMediaProfiles": {
+      "linkedin": "https://linkedin.com/company/cloudsync",
+      "twitter": "https://twitter.com/cloudsync",
+      "facebook": "https://facebook.com/cloudsync"
+    }
+  },
+  {
+    "name": "DataSphere",
+    "website": "www.datasphere.com",
+    "industry": "Big Data",
+    "location": "Boston, MA",
+    "workEmail": "contact@datasphere.com",
+    "salesEmail": "sales@datasphere.com",
+    "ceoName": "Emily Davis",
+    "ceoLinkedIn": "https://linkedin.com/in/emilydavis",
+    "competitors": ["CloudSync", "QuantumSoft"],
+    "jobOpenings": [
+      { "title": "Data Engineer", "location": "Boston, MA" },
+      { "title": "Business Analyst", "location": "Remote" }
+    ],
+    "revenueGrowth": "22% YoY",
+    "investors": [
+      { "name": "Google Ventures", "funding": "$70M" },
+      { "name": "Intel Capital", "funding": "$45M" }
+    ],
+    "socialMediaProfiles": {
+      "linkedin": "https://linkedin.com/company/datasphere",
+      "twitter": "https://twitter.com/datasphere",
+      "facebook": "https://facebook.com/datasphere"
+    }
+  },
+  {
+    "name": "QuantumSoft",
+    "website": "www.quantumsoft.com",
+    "industry": "Software Development",
+    "location": "Chicago, IL",
+    "workEmail": "contact@quantumsoft.com",
+    "salesEmail": "sales@quantumsoft.com",
+    "ceoName": "Robert Wilson",
+    "ceoLinkedIn": "https://linkedin.com/in/robertwilson",
+    "competitors": ["NextGen AI", "DataSphere"],
+    "jobOpenings": [
+      { "title": "Software Developer", "location": "Chicago, IL" },
+      { "title": "QA Engineer", "location": "Remote" }
+    ],
+    "revenueGrowth": "14% YoY",
+    "investors": [
+      { "name": "Accel Partners", "funding": "$55M" },
+      { "name": "Bessemer Venture Partners", "funding": "$30M" }
+    ],
+    "socialMediaProfiles": {
+      "linkedin": "https://linkedin.com/company/quantumsoft",
+      "twitter": "https://twitter.com/quantumsoft",
+      "facebook": "https://facebook.com/quantumsoft"
+    }
+  },
+  {
+    "name": "CyberShield",
+    "website": "www.cybershield.com",
+    "industry": "Cybersecurity",
+    "location": "Washington, DC",
+    "workEmail": "contact@cybershield.com",
+    "salesEmail": "sales@cybershield.com",
+    "ceoName": "Laura Martinez",
+    "ceoLinkedIn": "https://linkedin.com/in/lauramartinez",
+    "competitors": ["TechCorp", "CloudSync"],
+    "jobOpenings": [
+      { "title": "Security Analyst", "location": "Washington, DC" },
+      { "title": "Penetration Tester", "location": "Remote" }
+    ],
+    "revenueGrowth": "25% YoY",
+    "investors": [
+      { "name": "Cisco Investments", "funding": "$80M" },
+      { "name": "Paladin Capital Group", "funding": "$50M" }
+    ],
+    "socialMediaProfiles": {
+      "linkedin": "https://linkedin.com/company/cybershield",
+      "twitter": "https://twitter.com/cybershield",
+      "facebook": "https://facebook.com/cybershield"
+    }
+  },
+  {
+    "name": "GreenTech Solutions",
+    "website": "www.greentech.com",
+    "industry": "Renewable Energy",
+    "location": "Denver, CO",
+    "workEmail": "contact@greentech.com",
+    "salesEmail": "sales@greentech.com",
+    "ceoName": "David Green",
+    "ceoLinkedIn": "https://linkedin.com/in/davidgreen",
+    "competitors": ["BlueOcean Analytics", "SmartEdge Systems"],
+    "jobOpenings": [
+      { "title": "Renewable Energy Engineer", "location": "Denver, CO" },
+      { "title": "Sustainability Consultant", "location": "Remote" }
+    ],
+    "revenueGrowth": "30% YoY",
+    "investors": [
+      { "name": "Breakthrough Energy Ventures", "funding": "$90M" },
+      { "name": "Khosla Ventures", "funding": "$60M" }
+    ],
+    "socialMediaProfiles": {
+      "linkedin": "https://linkedin.com/company/greentech",
+      "twitter": "https://twitter.com/greentech",
+      "facebook": "https://facebook.com/greentech"
+    }
+  },
+  {
+    "name": "BlueOcean Analytics",
+    "website": "www.blueoceananalytics.com",
+    "industry": "Data Analytics",
+    "location": "Los Angeles, CA",
+    "workEmail": "contact@blueoceananalytics.com",
+    "salesEmail": "sales@blueoceananalytics.com",
+    "ceoName": "Sophia Lee",
+    "ceoLinkedIn": "https://linkedin.com/in/sophialee",
+    "competitors": ["DataSphere", "QuantumSoft"],
+    "jobOpenings": [
+      { "title": "Data Analyst", "location": "Los Angeles, CA" },
+      { "title": "Machine Learning Engineer", "location": "Remote" }
+    ],
+    "revenueGrowth": "17% YoY",
+    "investors": [
+      { "name": "Sapphire Ventures", "funding": "$65M" },
+      { "name": "Battery Ventures", "funding": "$40M" }
+    ],
+    "socialMediaProfiles": {
+      "linkedin": "https://linkedin.com/company/blueoceananalytics",
+      "twitter": "https://twitter.com/blueoceananalytics",
+      "facebook": "https://facebook.com/blueoceananalytics"
+    }
+  },
+  {
+    "name": "SmartEdge Systems",
+    "website": "www.smartedge.com",
+    "industry": "IoT",
+    "location": "San Diego, CA",
+    "workEmail": "contact@smartedge.com",
+    "salesEmail": "sales@smartedge.com",
+    "ceoName": "Kevin Adams",
+    "ceoLinkedIn": "https://linkedin.com/in/kevinadams",
+    "competitors": ["GreenTech Solutions", "CyberShield"],
+    "jobOpenings": [
+      { "title": "IoT Engineer", "location": "San Diego, CA" },
+      { "title": "Embedded Systems Developer", "location": "Remote" }
+    ],
+    "revenueGrowth": "19% YoY",
+    "investors": [
+      { "name": "Qualcomm Ventures", "funding": "$75M" },
+      { "name": "Samsung NEXT", "funding": "$50M" }
+    ],
+    "socialMediaProfiles": {
+      "linkedin": "https://linkedin.com/company/smartedge",
+      "twitter": "https://twitter.com/smartedge",
+      "facebook": "https://facebook.com/smartedge"
+    }
+    },
+
+  {
+    "command": "hi",
+    "response": "Hello! How can I assist you today?"
+  },
+  {
+    "command": "hello",
+    "response": "Hey there! Need any help?"
+  },
+  {
+    "command": "Introduce yourself",
+    "response": "I’m your AI assistant! I can fetch company details, contacts, and more."
+  },
+  {
+    "command": "Show available commands",
+    "response": [
+      "Find Companies",
+      "Enrich Those Profiles",
+      "Find Work Email",
+      "Generate Sales Emails",
+      "Find CEO of {company}",
+      "Find competitors of {company}"
+    ]
+  },
+  {
+    "command": "How do I use this?",
+    "response": "Simply type a command like 'Find companies in AI industry' or 'Find Work Email'."
+  },
+  {
+    "command": "help",
+    "response": "I can fetch business contacts, emails, and insights. Try commands like 'Find Companies'."
+  },
+  {
+    "command": "Tell me a joke",
+    "response": "Why did the developer go broke? Because he used up all his cache!"
+  },
+  {
+    "command": "Motivate me",
+    "response": "Believe in yourself! Every expert was once a beginner."
+  },
+  {
+    "command": "bye",
+    "response": "bye! Have a great day!"
+  },
+  {
+    "command": "Thank you",
+    "response": "You’re welcome! Happy to help!"
+  },
+    {
+    "command": "good morning",
+    "response": "Good morning! Hope you have a productive day ahead!"
+  },
+  {
+    "command": "good night",
+    "response": "Good night! See you tomorrow!"
+  },
+  {
+    "command": "how are you?",
+    "response": "I’m just a bot, but I’m always here to help!"
+  },
+  {
+    "command": "What’s your name?",
+    "response": "I’m your AI assistant! You can call me ChatBot."
+  },
+  {
+    "command": "Who created you?",
+    "response": "I was built by a developer who loves automation and AI!"
+  },
+  {
+    "command": "Are you human?",
+    "response": "Nope, but I can chat like one!"
+  },
+  {
+    "command": "Do you sleep?",
+    "response": "Nope! I’m always awake to assist you!"
+  },
+  {
+    "command": "Give me a business tip",
+    "response": "Always listen to your customers—they’ll guide your business success!"
+  },
+  {
+    "command": "How can I improve my sales?",
+    "response": "Engage your audience, personalize your emails, and follow up!"
+  },
+  {
+    "command": "Suggest a startup idea",
+    "response": "How about an AI-powered business insights tool? Oh wait, that’s what I am!"
+  },
+  {
+    "command": "What’s your favorite color?",
+    "response": "I like blue! Just like the sky and clean UI designs!"
+  },
+  {
+    "command": "Sing a song",
+    "response": "I would if I could, but I can drop some great music recommendations!"
+  },
+  {
+    "command": "Dance for me",
+    "response": "I can’t dance, but I can make your data move!"
+  },
+  {
+    "command": "Tell me a fun fact",
+    "response": "Did you know that the first computer bug was a real moth stuck in a relay?"
+  }
+
+]
