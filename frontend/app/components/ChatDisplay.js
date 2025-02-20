@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 
-const ChatDisplay = ({ messages,  handleSendMessage  }) => {
+const ChatDisplay = ({ messages, handleSendMessage }) => {
   const [sortConfig, setSortConfig] = useState({ key: null, direction: 'asc' });
-  const [searchQuery, setSearchQuery] = useState('');
 
   // Handle sorting
   const handleSort = (key) => {
@@ -30,45 +29,10 @@ const ChatDisplay = ({ messages,  handleSendMessage  }) => {
     return msg;
   });
 
-  // Filter messages based on search query
-  const filteredMessages = sortedMessages.map((msg) => {
-    if (msg.type === 'table') {
-      const filteredData = msg.text.filter((row) =>
-        Object.values(row).some((value) =>
-          value.toString().toLowerCase().includes(searchQuery.toLowerCase())
-        )
-      );
-      return { ...msg, text: filteredData };
-    }
-    return msg;
-  });
-
   return (
-    <div className="chat-display">
-      {/* Header with Action Buttons */}
-      <div className="header">
-        <div className="header-actions">
-       <button onClick={() => handleSendMessage("Enrich those profiles")}>Enrich Profile</button>
-          <button onClick={() => handleSendMessage("Find Work Email")}>Find Work Email</button>
-          <button onClick={() => handleSendMessage("Generate Sales Emails")}>Generate Sales Emails</button>
-          <button>Use Agent</button>
-          <button>Enrich Data</button>
-        </div>
-      </div>
-
-      {/* Search and Filter Bar */}
-      <div className="search-filter-bar">
-        <input
-          type="text"
-          placeholder="Search..."
-          value={searchQuery}
-          onChange={(e) => setSearchQuery(e.target.value)}
-        />
-        <button>Filter</button>
-      </div>
-
+    <div className={`chat-display ${messages.length === 0 ? 'hidden' : ''}`}>
       {/* Display Messages */}
-      {filteredMessages
+      {sortedMessages
         .filter((msg) => msg && msg.type) // Ignore null or undefined messages
         .map((msg, index) => (
           <div key={index} className={`message ${msg.type}`}>

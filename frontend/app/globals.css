@@ -22,74 +22,85 @@ main {
   display: flex;
   flex-direction: column;
   padding: 20px;
-  padding-top: 160px; /* Add padding to prevent overlap with the fixed header */
+  padding-top: 80px; /* Reduced padding to prevent overlap with the fixed header */
   padding-bottom: 80px; /* Add padding to prevent overlap with the chat input */
 }
 
-/* Fixed Header with Action Buttons and Search Bar */
-.header {
+/* Sidebar */
+.sidebar {
   position: fixed;
   top: 0;
-  left: 0;
-  right: 0;
+  left: -300px; /* Hide sidebar by default */
+  width: 300px;
+  height: 100vh;
   background: #ffffff;
-  padding: 20px;
-  z-index: 1000; /* Ensure it stays on top of other content */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for better visibility */
+  box-shadow: 4px 0 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  z-index: 1001; /* Ensure it stays above other content */
+}
+
+.sidebar.open {
+  transform: translateX(300px); /* Slide in when open */
+}
+
+/* Hide the sidebar toggle icon when the sidebar is open */
+.sidebar.open + .sidebar-toggle-icon {
+  display: none;
+}
+
+/* Sidebar Toggle Icon */
+.sidebar-toggle-icon {
+  position: fixed;
+  top: 320px;
+  left: 1px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  cursor: pointer;
+  z-index: 1002;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.header.hidden {
-  transform: translateY(-100%);
-  box-shadow: none;
+
+.sidebar-toggle-icon:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-.header-actions {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 20px; /* Space between buttons and search bar */
-}
-
-/* All Buttons Purple */
-.header-actions button {
-  padding: 8px 16px;
-  background: #6f42c1; /* Purple */
-  color: #fff;
-  border: none;
-  border-radius: 8px;
-  font-size: 0.9rem;
-  cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
-  position: relative;
-  overflow: hidden;
-}
-
-.header-actions button::after {
-  content: '';
+/* Close Button in Sidebar */
+.sidebar-close-button {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 300%;
-  height: 300%;
-  background: rgba(255, 255, 255, 0.3);
-  transform: translate(-50%, -50%) scale(0);
-  border-radius: 50%;
-  transition: transform 0.5s ease;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #6f42c1; /* Purple */
 }
 
-.header-actions button:hover::after {
-  transform: translate(-50%, -50%) scale(1);
+.sidebar-close-button:hover {
+  color: #0056b3; /* Darker blue */
 }
 
-.header-actions button:active {
-  transform: scale(0.95);
+/* Sidebar Content */
+.sidebar-content {
+  padding: 20px;
 }
 
-/* Search and Filter Bar */
+/* Search and Filter Bar in Sidebar */
 .search-filter-bar {
   display: flex;
+  flex-direction: column;
   gap: 10px;
-  position: relative;
+  margin-bottom: 20px;
 }
 
 .search-filter-bar input {
@@ -123,6 +134,47 @@ main {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
+/* Command Buttons in Sidebar */
+.command-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.command-buttons button {
+  padding: 8px 16px;
+  background: #6f42c1; /* Purple */
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.command-buttons button::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: translate(-50%, -50%) scale(0);
+  border-radius: 50%;
+  transition: transform 0.5s ease;
+}
+
+.command-buttons button:hover::after {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.command-buttons button:active {
+  transform: scale(0.95);
+}
+
 /* Chat Display */
 .chat-display {
   flex: 1;
@@ -135,7 +187,13 @@ main {
   border: 1px solid #e5e7eb;
   overflow: hidden;
   position: relative;
+   margin-bottom: 20px;
 }
+/* Hide the chat display when there are no messages */
+.chat-display.hidden {
+  display: none;
+}
+
 
 .chat-display::before {
   content: '';
@@ -231,7 +289,6 @@ tr:hover {
   font-size: 1rem;
   line-height: 1.4;
   position: relative;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -324,4 +381,27 @@ tr:hover {
 
 .chat-input button:active {
   animation: pulse 0.3s ease;
+}
+
+/* Logo Styling */
+.logo {
+  width: 150px; /* Adjust based on your logo size */
+  height: auto;
+  margin: 20px 0;
+}
+.brand-name {
+  font-family: 'Inter', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #007bff; /* Light blue */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: linear-gradient(45deg, #007bff, #00bfff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: glow 2s infinite alternate;
+    text-shadow: 3px 3px 6px rgba(173, 216, 230, 0.6), /* Light blue shadow */
+                 1px 1px 2px rgba(0, 0, 0, 0.1); /* Soft black shadow for depth */
+    font-size: 50px;
+
 }
